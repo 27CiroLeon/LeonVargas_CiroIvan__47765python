@@ -1,0 +1,47 @@
+{% extends 'AppCoder/inicio.html' %}
+
+{% block content %}
+<br>
+<br>
+
+<div class="container text-center">
+    <h1>Peliculas de Accion</h1>
+</div>
+
+<br>
+<div class="container text-center">
+    <div class="row">
+            {% for accion in accion %}
+            <div class="col-sm-6 align-items-center">
+                <div class="card-body">
+                <img src="{{accion.imagenPeliculas.url}}" class="" width="350px">
+                <br>
+                <br>
+               <h2> {{accion.nombre}}</h2>
+                <br>
+                <br>
+                <a href="{% url 'accion' accion.id %}"><i class="btn btn-primary">Detalles y Comentarios</i></a>
+                <br>
+                <br>
+                {% if user.id == accion.usuario.id %}
+                <a href="{% url 'accion_editar' accion.id %}"><i class="btn btn-primary">Editar</i></a>
+                <br>
+                <br>
+                <a href="{% url 'accion_eliminar' accion.id %}"><i class="btn btn-primary">Eliminar</i></a>
+                <br>
+                <br>
+                <br>
+                <br>
+                {% endif %}  
+                </div>
+            </div>
+            {% endfor %}
+    </div>
+</div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+{% endblock %}
