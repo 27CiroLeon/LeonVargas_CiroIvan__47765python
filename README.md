@@ -21,3 +21,5 @@ USUARIO DE PRUEBA(no admin): sera el que se registre como usuario :)
 CASOS DE PRUEBA: en el archivo excel llamado "Casos de prueba.xlsx" se encuentra el detalle de las pruebas registradas
 
 TECNOLOGÍAS UTILIZADAS: Front-End: HTML 5 CSS 3 Javascript Bootstrap Back-End: Python Django Pillow
+
+hago aqui alcance del video : https://drive.google.com/drive/folders/1AFQC0QXSwJ1kzMS3D-hSOvDujaO6lTAa?usp=sharing
